@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: green wavy underline;
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* the others listed after are backups in case the device doesn't have the first one installed. see https://www.cssfontstack.com/ */
+}
+
+/* font weight is 100 - 900 */
+p {
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}

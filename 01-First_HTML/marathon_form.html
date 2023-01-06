@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Form</title>
+</head>
+
+<body>
+    <main>
+        <H1>Race Registration!</H1>
+
+        <form action="/register">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="first" required>
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="last" required>
+            </div>
+            <p>
+                Select a Race:
+            </p>
+            <div>
+                <input type="radio" name="race" id="fr" value="fr" required>
+                <label for="fr">Fun Run 5k</label>
+                <br>
+                <input type="radio" name="race" id="hm" value="hm">
+                <label for="hm">Half Marathon</label>
+                <br>
+                <input type="radio" name="race" id="fm" value="fm">
+                <label for="fm">Full Marathon</label>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="pw">Password</label>
+                <input type="password" name="pw" id="pw" required>
+            </div>
+            <div>
+                <label for="age">Select Age Group</label>
+                <select name="age" id="age">
+                    <option value="u18">under 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </div>
+            <button type="submit">Register!</button>
+        </form>
+
+        <hr>
+        <h2>Notes</h2>
+        <p>
+            can hold alt key, then select multiple spots and type in all spots are once. handy to add the an attribute
+            to many places at once.
+        </p>
+    </main>
+</body>
+
+</html>

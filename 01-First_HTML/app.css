@@ -1,0 +1,21 @@
+h2 {
+    color: rgb(0, 240, 160);
+    background-color: rgb(85, 85, 85);
+
+}
+
+button {
+    color: burlywood;
+    background-color: darkslategrey;
+}
+
+/* notice how you need semicolons in cssg */
+
+p {
+    color: beige;
+    background-color: darkgray;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+}

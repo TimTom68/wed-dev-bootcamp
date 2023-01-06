@@ -1,0 +1,118 @@
+/* universal selector */
+/* * { 
+    color: black;
+} */
+
+/* element selector */
+/* button {
+    color: aquamarine;
+} */
+
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+    /* background-color: #1d3557; */
+}
+
+/* select multiple using comma */
+*/ h1,
+h2 {
+    color: #1d3557;
+}
+
+/* id should be unique to 1 item in html  */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+/* classes can apply to multiple items and any type  */
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* all anchor tags that are descendent of (nested in) elements with class "post" */
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* all anchor tags that are descendent of (nested in) footer elements */
+footer a {
+    color: #e63946;
+}
+
+/* every button that comes right after (is adjacent too)(same level as) an h2 */
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* all anchors that are a direct descendent of a footer (not just nested at any level, but rather exactly one level below footer) */
+footer>a {
+    color: #457b9d;
+}
+
+/* all inputs with type password */
+input[type="password"] {
+    color: green;
+}
+
+/* all anchors that contain google in their href */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* all anchors that finish with ".com" */
+/* a[href$=".com"] {
+    font-style: italic;
+} */
+
+/* what happens when you hover over button elements of class post, although it'll lose its battle to a prior id selector */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* while I'm clicking on a button, but doesn't stay after I release click */
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* checkbox element when checked
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+} */
+
+/* sdeudo class that takes every second post. if I removed the n, it would just take the second .post, rather than 2,4,6,8,...,2n */
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+h2::first-letter {
+    font-size: 40px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: yellow;
+}

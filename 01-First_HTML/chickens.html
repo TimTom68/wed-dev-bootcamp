@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chickens - Intro</title>
+
+    <!-- the style element in head of html doc. better than inline, but only applies this doc, and we might have many we want to match 
+        <style>
+        h2 {
+            color: blueviolet;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="chickens.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- remember {Shif}{Alt}{down} aka +!{down} -->
+            <li><a href="emmetdemo.html">EmmetDemo</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact">contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>
+            HTML Elements
+        </h1>
+        <ul>
+            <li>&lt; article &gt;</li> <!--acts similar to a section-->
+            <li>&lt; aside &gt;</li> <!--a side note or side bar-->
+            <li>&lt; footer &gt;</li> <!--a footer-->
+            <li>&lt; time &gt;</li> <!--a footer-->
+            <ul>
+                <li>they write time the way I like, say we are <time datetime="2022-12-30">December 30th</time>, you
+                    should
+                    mention with the datetime attribute, that it's <time datetime="2022-12-30">2022-12-30</time></li>
+                <li>the datetime attribute changes based on whether it's a date, time, or duration. Event starts at
+                    <time datetime="20:00">20h00</time> and will last <time datetime="PT2H30M">2h30m</time>
+                </li>
+            </ul>
+        </ul>
+        <h1>
+            Chicken
+        </h1>
+        <p>
+            I like drinking H<sub>2</sub>O. I also like fractions like <sup>1</sup>/<sub>2</sub>. The less than symbol
+            (&lt;) needs be written as "& l t ;". The amperstan "&amp;" symbol is used at the start, and the semicolon
+            ";"
+            symbol is used to close these entities. each entity can be used with its name or its number. Like &lt; and
+            &#60;
+            give the same entity.
+        </p>
+        <!-- this is a comment, which can be done with ctrl + / or ctrl + k + c, and to uncomment it'd be ctrl + / again, or ctrl + k + u -->
+        <figure> <!--I could use a div, but the figure entity is cleaner to coderead-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Male_and_female_chicken_sitting_together.jpg/330px-Male_and_female_chicken_sitting_together.jpg"
+                alt="chicken image from wikipedia">
+            <figcaption>A chicken image from web</figcaption>
+        </figure>
+
+        <div> <!--a div is a container that holds anything and keeps it grouped together-->
+            <a href="https://en.wikipedia.org/wiki/Chicken">I am a link to chickens website</a>
+
+            <a href="about.html">I am a <span> to local html </span> file</a>
+        </div>
+        <hr> <!--  horizontal line break -->
+        <p>
+            <b>chicken</b>(Gallus gallus domesticus) is a domesticated junglefowl species, with attributes of wild
+            species
+            such as the grey and the Ceylon junglefowl <sup><a href="somesource.com">[1]</a></sup> that are originally
+            from
+            Southeastern Asia. <br>
+            <!--makes a break in the text-->
+            Rooster or cock is a
+            term for an adult male bird, and a younger male may be called a cockerel. A male that has been castrated is
+            a
+            capon. An adult female bird is called a hen and a sexually immature female is called a pullet. Humans now
+            keep
+            chickens primarily as a source of food (consuming both their meat and eggs) and as pets. Traditionally they
+            were
+            also bred for cockfighting, which is still practiced in some places.
+        </p>
+
+        <img src="img/AMD_OC.png" alt="AMD OC settings">
+
+        <p>
+            Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion
+            as
+            of 2018,[2] up from more than 19 billion in 2011. There are more chickens in the world than any other bird.
+            There are numerous cultural references to chickens – in myth, folklore and religion, and in language and
+            literature
+        </p>
+        <section>
+            <h2>
+                Tech
+            </h2>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis temporibus magnam perspiciatis nisi
+                amet.
+                Debitis, rem repellendus. Provident ducimus recusandae perspiciatis, omnis quaerat quasi mollitia vero
+                eveniet
+                modi nihil porro.
+
+            </p>
+        </section>
+        <h2>another heading</h2>
+        <h3>general behaviour</h3>
+        <h4>social behaviour</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corrupti iste nisi fuga. Architecto
+            deleniti,
+            eos reprehenderit ullam eum numquam quibusdam assumenda, repellat dolores quasi dolorum, reiciendis
+            voluptatibus
+            sed amet?</p>
+        <h2>breeds</h2>
+        <ol>
+            <li>ordered list</li>
+            <li>second item</li>
+            <li>
+                nested list below third item
+                <ul>
+                    <li>first in nest</li>
+                    <li>second in nest</li>
+                </ul>
+            </li>
+            <li>shift alt down</li>
+            <li>copies a line down</li>
+        </ol>
+        <ul>
+            <li>unordered list</li>
+            <li>second item</li>
+            <li>shift alt down</li>
+            <li>copies a line down</li>
+        </ul>
+    </main>
+    <footer>
+        <p> This is my website's footer
+        <ul>
+            <li><a href="about.html">about</a></li>
+        </ul>
+        </p>
+    </footer>
+</body>
+
+</html>
